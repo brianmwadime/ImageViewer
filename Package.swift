@@ -14,7 +14,11 @@ let package = Package(
     targets: [
         .target(
             name: "ImageViewer",
-            dependencies: []
+            dependencies: [],
+            path: "ImageViewer",
+            exclude: [
+            "Info.plist"
+        ]
         ),
         .testTarget(
             name: "ImageViewerTests",
